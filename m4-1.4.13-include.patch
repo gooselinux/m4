@@ -1,0 +1,11 @@
+diff -up m4-1.4.13/src/path.c.orig m4-1.4.13/src/path.c
+--- m4-1.4.13/src/path.c.orig	2010-05-31 14:45:39.740316155 +0200
++++ m4-1.4.13/src/path.c	2010-05-31 14:45:56.106273785 +0200
+@@ -23,6 +23,7 @@
+    and "sinclude".  */
+ 
+ #include "m4.h"
++#include <sys/stat.h>
+ 
+ struct includes
+ {
